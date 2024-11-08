@@ -2,14 +2,10 @@
 public class NumWords {
 	public static void main(String args[]) {
 	    // reciving a number & returns its hundreds, tens, and ones values
-		String numberString = args[0];
-		while (numberString.length() < 3) {
-			numberString = ("0" + numberString);
-		}
-		System.out.printf("%n %s hundreds, %s tens, and %s ones.",
-			numberString.charAt(numberString.length() - 3), 
-			numberString.charAt(numberString.length() - 2), 
-			numberString.charAt(numberString.length() - 1));
+		int givenNumber = Integer.parseInt(args[0]);
+		int ones = (givenNumber % 10);
+		int tens = (((givenNumber % 100) - ones) / 10);
+		int hundreds = ((givenNumber - tens - ones) / 100);
+		System.out.printf("%n %s hundreds, %s tens, and %s ones.", hundreds, tens, ones);
 	}
-	// if 'string' is not accepted, use modulu 
 }
