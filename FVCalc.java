@@ -1,7 +1,7 @@
 // Computes the future value of a saving investment.
 public class FVCalc {
 	public static void main(String[] args){
-		// Calculator which predict future value of ventures
+		// Calculator which predict future value of ventures.
 		int currentValue = Integer.parseInt(args[0]);
 		double rate = Double.parseDouble(args[1]);
 		double numberOfYears = Double.parseDouble(args[2]);
