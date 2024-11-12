@@ -8,5 +8,6 @@ public class FVCalc {
 		double futureValue = Math.ceil(currentValue * Math.pow((1 + rate/100), numberOfYears));
 		System.out.printf("After %.0f years, $%d saved at %.1f%% will yeild a $%d",
 		numberOfYears, currentValue, rate, (int) futureValue);
+		// Finish
 	}
 }
