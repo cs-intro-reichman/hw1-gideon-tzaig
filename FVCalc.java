@@ -6,7 +6,7 @@ public class FVCalc {
 		double rate = Double.parseDouble(args[1]);
 		double numberOfYears = Double.parseDouble(args[2]);
 		double futureValue = Math.ceil(currentValue * Math.pow((1 + rate/100), numberOfYears));
-		System.out.printf("After %.0f years, $%d saved at %.1f%% will yeild a $%d",
+		System.out.printf("After %.0f years, $%d saved at %.1f%% will yeild a $%d", // fixed
 		numberOfYears, currentValue, rate, (int) futureValue);
 		// Finish
 	}
